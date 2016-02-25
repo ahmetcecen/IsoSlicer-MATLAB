@@ -6,7 +6,7 @@ IsoSlicer is a MATLAB GUI tp help create a 3D equivelent of a contourplot for vo
 
 While it is in your path, simply write IsoSlicer to the command window.
 
-<p align="center"><img src="/GUI.png"></p>
+<p align="center"><img src="/GUI.PNG"></p>
 
 ## Workflow
 
@@ -26,4 +26,4 @@ Now focus on the right window. You can select an iso-surface you transfered from
 
 **Export Figure** -> Save the right window to a figure. This figure will have a legend as well based on your color selection and isosurface levels. It will also save the figure as Figure.fig to your working directory.
 
-<p align="center"><img src="/Figure.png"></p>
+<p align="center"><img src="/Figure.PNG"></p>
