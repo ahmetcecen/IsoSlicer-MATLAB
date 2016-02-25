@@ -24,6 +24,6 @@ Keep capturing iso-surfaces at different levels to the right window until you ha
 
 Now focus on the right window. You can select an iso-surface you transfered from the drop down menu. They are numbered by the order you wrote them to the right window. Once you made a selection, you can adjust the transperency using the gray vertical slider, and the rgb values using the color coded vertical sliders to create a vibrant multilayered plot. Once you are satisfied with the plot:
 
-**Export Figure** -> Save the right window to a figure. This figure will have a legend as well based on your color selection and isosurface levels.
+**Export Figure** -> Save the right window to a figure. This figure will have a legend as well based on your color selection and isosurface levels. It will also save the figure as Figure.fig to your working directory.
 
 <p align="center"><img src="/Figure.png"></p>
