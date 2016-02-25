@@ -1,6 +1,6 @@
 # IsoSlicer-MATLAB
 
-IsoSlicer is a MATLAB GUI tp help create a 3D equivelent of a contourplot for volumetric data. The product is a figure with a series of overlayed transparent iso-layers created using the MATLAB isosurface algorithm. Doesn't require any toolboxes.
+IsoSlicer is a MATLAB GUI to help create a 3D equivelent of a contourplot for volumetric data. The product is a figure with a series of overlayed transparent iso-layers created using the MATLAB isosurface algorithm. Doesn't require any toolboxes.
 
 ## Usage
 
