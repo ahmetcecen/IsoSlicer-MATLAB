@@ -167,28 +167,28 @@ patch('Vertices', verts, 'Faces', faces, ...
 axis image;
 grid on;
 
-set(handles.axes1,'XLim',[0 size(GG,1)]);
-set(handles.axes1,'YLim',[0 size(GG,2)]);
+set(handles.axes1,'YLim',[0 size(GG,1)]);
+set(handles.axes1,'XLim',[0 size(GG,2)]);
 set(handles.axes1,'ZLim',[0 size(GG,3)]);
 
-set(handles.axes1,'XTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
-set(handles.axes1,'YTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
+set(handles.axes1,'YTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
+set(handles.axes1,'XTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
 set(handles.axes1,'ZTick',[0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2) round(3*(size(GG,3)+1)/4) (size(GG,3))]);
 
-set(handles.axes1,'XTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
-set(handles.axes1,'YTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
+set(handles.axes1,'YTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
+set(handles.axes1,'XTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
 set(handles.axes1,'ZTickLabel',[((size(GG,3)+1)/2) round((size(GG,3)+1)/4) 0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2)]);
 
-set(handles.axes3,'XLim',[0 size(GG,1)]);
-set(handles.axes3,'YLim',[0 size(GG,2)]);
+set(handles.axes3,'YLim',[0 size(GG,1)]);
+set(handles.axes3,'XLim',[0 size(GG,2)]);
 set(handles.axes3,'ZLim',[0 size(GG,3)]);
 
-set(handles.axes3,'XTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
-set(handles.axes3,'YTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
+set(handles.axes3,'YTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
+set(handles.axes3,'XTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
 set(handles.axes3,'ZTick',[0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2) round(3*(size(GG,3)+1)/4) (size(GG,3))]);
 
-set(handles.axes3,'XTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
-set(handles.axes3,'YTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
+set(handles.axes3,'YTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
+set(handles.axes3,'XTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
 set(handles.axes3,'ZTickLabel',[((size(GG,3)+1)/2) round((size(GG,3)+1)/4) 0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2)]);
 
 
@@ -382,16 +382,16 @@ plist{surfacecount}=patch('Vertices', verts, 'Faces', faces, ...
 axis image;
 grid on;
 
-set(handles.axes3,'XLim',[0 size(GG,1)]);
-set(handles.axes3,'YLim',[0 size(GG,2)]);
+set(handles.axes3,'YLim',[0 size(GG,1)]);
+set(handles.axes3,'XLim',[0 size(GG,2)]);
 set(handles.axes3,'ZLim',[0 size(GG,3)]);
 
-set(handles.axes3,'XTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
-set(handles.axes3,'YTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
+set(handles.axes3,'YTick',[0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2) round(3*(size(GG,1)+1)/4) (size(GG,1))]);
+set(handles.axes3,'XTick',[0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2) round(3*(size(GG,2)+1)/4) (size(GG,2))]);
 set(handles.axes3,'ZTick',[0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2) round(3*(size(GG,3)+1)/4) (size(GG,3))]);
 
-set(handles.axes3,'XTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
-set(handles.axes3,'YTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
+set(handles.axes3,'YTickLabel',[((size(GG,1)+1)/2) round((size(GG,1)+1)/4) 0 round((size(GG,1)+1)/4) ((size(GG,1)+1)/2)]);
+set(handles.axes3,'XTickLabel',[((size(GG,2)+1)/2) round((size(GG,2)+1)/4) 0 round((size(GG,2)+1)/4) ((size(GG,2)+1)/2)]);
 set(handles.axes3,'ZTickLabel',[((size(GG,3)+1)/2) round((size(GG,3)+1)/4) 0 round((size(GG,3)+1)/4) ((size(GG,3)+1)/2)]);
 
 
