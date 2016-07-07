@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1794338023" file="C:\Users\Silver\Documents\GitHub\IsoSlicer-MATLAB\IsoSlicer.prj" location="C:\Users\Silver\Documents\GitHub\IsoSlicer-MATLAB" name="IsoSlicer" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3734558242" file="C:\Users\Silver\Documents\GitHub\IsoSlicer-MATLAB\IsoSlicer.prj" location="C:\Users\Silver\Documents\GitHub\IsoSlicer-MATLAB" name="IsoSlicer" target="target.mlapps" target-name="Package App">
     <param.appname>IsoSlicer</param.appname>
     <param.authnamewatermark>Ahmet Cecen</param.authnamewatermark>
     <param.email>ahmetcecen@gmail.com</param.email>
@@ -16,7 +16,7 @@
 Detailed user guide: 
 https://github.com/ahmetcecen/IsoSlicer-MATLAB</param.description>
     <param.screenshot>${PROJECT_ROOT}\Figure.PNG</param.screenshot>
-    <param.version>1.0.2</param.version>
+    <param.version>1.0.3</param.version>
     <param.products.name>
       <item>MATLAB</item>
     </param.products.name>
@@ -30,8 +30,6 @@ https://github.com/ahmetcecen/IsoSlicer-MATLAB</param.description>
     <param.output>${PROJECT_ROOT}\IsoSlicer.mlappinstall</param.output>
     <param.guid>9ae00d82-5e73-4c1e-ad70-0f3787ca6766</param.guid>
     <unset>
-      <param.authnamewatermark />
-      <param.company />
       <param.platforms />
     </unset>
     <fileset.main>

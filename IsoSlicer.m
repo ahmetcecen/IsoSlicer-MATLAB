@@ -22,7 +22,7 @@ function varargout = IsoSlicer(varargin)
 
 % Edit the above text to modify the response to help IsoSlicer
 
-% Last Modified by GUIDE v2.5 24-Feb-2016 15:44:16
+% Last Modified by GUIDE v2.5 07-Jul-2016 16:03:06
 % Copyright (c) 2015, Ahmet Cecen  -  All rights reserved.
 
 % Begin initialization code - DO NOT EDIT
@@ -256,6 +256,8 @@ global plist
 axes(handles.axes3);
 plist{get(handles.popupmenu2,'Value')}.FaceAlpha= get(handles.slider2,'Value');
 
+set(handles.edit2,'String',num2str(get(handles.slider2,'Value')));
+
 % --- Executes during object creation, after setting all properties.
 function slider2_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to slider2 (see GCBO)
@@ -279,6 +281,8 @@ function slider3_Callback(hObject, eventdata, handles)
 global plist
 axes(handles.axes3);
 plist{get(handles.popupmenu2,'Value')}.FaceColor=[get(handles.slider3,'Value') get(handles.slider4,'Value') get(handles.slider5,'Value')];
+
+set(handles.edit3,'String',num2str(get(handles.slider3,'Value')));
 
 % --- Executes during object creation, after setting all properties.
 function slider3_CreateFcn(hObject, eventdata, handles)
@@ -304,6 +308,8 @@ global plist
 axes(handles.axes3);
 plist{get(handles.popupmenu2,'Value')}.FaceColor=[get(handles.slider3,'Value') get(handles.slider4,'Value') get(handles.slider5,'Value')];
 
+set(handles.edit4,'String',num2str(get(handles.slider4,'Value')));
+
 % --- Executes during object creation, after setting all properties.
 function slider4_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to slider4 (see GCBO)
@@ -327,6 +333,8 @@ function slider5_Callback(hObject, eventdata, handles)
 global plist
 axes(handles.axes3);
 plist{get(handles.popupmenu2,'Value')}.FaceColor=[get(handles.slider3,'Value') get(handles.slider4,'Value') get(handles.slider5,'Value')];
+
+set(handles.edit5,'String',num2str(get(handles.slider5,'Value')));
 
 % --- Executes during object creation, after setting all properties.
 function slider5_CreateFcn(hObject, eventdata, handles)
@@ -476,6 +484,135 @@ function popupmenu4_CreateFcn(hObject, eventdata, handles)
 % handles    empty - handles not created until after all CreateFcns called
 
 % Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit2_Callback(hObject, eventdata, handles)
+% hObject    handle to edit2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit2 as text
+%        str2double(get(hObject,'String')) returns contents of edit2 as a double
+
+value = str2double(get(hObject,'String'));
+if value >= 1
+    value = 1;
+elseif value <= 0
+    value = 0;
+else
+end
+
+set(handles.slider2,'Value',value);
+handles.slider2.Callback(handles.slider2,eventdata)
+
+% --- Executes during object creation, after setting all properties.
+function edit2_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit3_Callback(hObject, eventdata, handles)
+% hObject    handle to edit3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit3 as text
+%        str2double(get(hObject,'String')) returns contents of edit3 as a double
+value = str2double(get(hObject,'String'));
+if value >= 1
+    value = 1;
+elseif value <= 0
+    value = 0;
+else
+end
+
+set(handles.slider3,'Value',value);
+handles.slider3.Callback(handles.slider3,eventdata)
+
+% --- Executes during object creation, after setting all properties.
+function edit3_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit4_Callback(hObject, eventdata, handles)
+% hObject    handle to edit4 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit4 as text
+%        str2double(get(hObject,'String')) returns contents of edit4 as a double
+value = str2double(get(hObject,'String'));
+if value >= 1
+    value = 1;
+elseif value <= 0
+    value = 0;
+else
+end
+
+set(handles.slider4,'Value',value);
+handles.slider4.Callback(handles.slider4,eventdata)
+
+% --- Executes during object creation, after setting all properties.
+function edit4_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit4 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit5_Callback(hObject, eventdata, handles)
+% hObject    handle to edit5 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit5 as text
+%        str2double(get(hObject,'String')) returns contents of edit5 as a double
+value = str2double(get(hObject,'String'));
+if value >= 1
+    value = 1;
+elseif value <= 0
+    value = 0;
+else
+end
+
+set(handles.slider5,'Value',value);
+handles.slider5.Callback(handles.slider5,eventdata)
+
+% --- Executes during object creation, after setting all properties.
+function edit5_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit5 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
